@@ -12,7 +12,7 @@ bool update_state(int c)
 {
     if (state == GAME_INTRO)
     {
-        if (c == ' ')
+        if (c == '1')
         {
             state = GAME_LOOP;
             clear();
@@ -35,4 +35,9 @@ bool update_state(int c)
 GAME_STATE get_state()
 {
     return state;
+}
+
+void set_state(GAME_STATE new_state)
+{
+    state = new_state;
 }

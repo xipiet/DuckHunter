@@ -48,6 +48,7 @@ void game_loop()
     bird_reached_target = false;
     generate_random_start_position();
     generate_random_coordinates();
+    reload_ammo();
 
     curs_set(0);
     timeout(0);
@@ -55,7 +56,9 @@ void game_loop()
     while (get_state() == GAME_LOOP)
     {
         int ch = getch();
-        update_state(ch);
+        if (update_state(ch)) {
+            break;
+        }
 
         if (ch == 'q')
         {
@@ -67,50 +70,55 @@ void game_loop()
         {
             if (event.bstate & BUTTON1_CLICKED)
             {
+                sound_play("shoot.wav");
+                use_ammo();
+                if (get_ammo() == 0)
+                {
+                    set_state(GAME_INTRO);
+                    break;
+                }
                 if (event.x >= px && event.x <= px + 8 && event.y >= py && event.y <= py + 2)
                 {
-                    sound_play("boing.wav");
+                    sound_play("hit.wav");
+                    add_ammo(1);
+                    get_ammo();
                     generate_random_start_position();
                     generate_random_coordinates();
                 }
             }
-            clear();
         }
 
         clear();
 
-        if (!bird_reached_target)
+        if (px < target_x)
         {
-            if (px < target_x)
-            {
-                px++;
-            }
-            else if (px > target_x)
-            {
-                px--;
-            }
+            px++;
+        }
+        else if (px > target_x)
+        {
+            px--;
+        }
 
-            if (py < target_y)
-            {
-                py++;
-            }
-            else if (py > target_y)
-            {
-                py--;
-            }
+        if (py < target_y)
+        {
+            py++;
+        }
+        else if (py > target_y)
+        {
+            py--;
+        }
 
-            if (px == target_x && py == target_y)
-            {
-                bird_reached_target = true;
-                generate_random_start_position();
-                generate_random_coordinates();
-            }
+        if (px == target_x && py == target_y)
+        {
+            generate_random_coordinates();
         }
 
         update_windmill();
         render_windmill();
 
         print_bird(py, px, 1);
+        render_ammo();
+
         refresh();
         msleep(100); // 100ms = 10 fps
     }

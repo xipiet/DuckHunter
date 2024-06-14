@@ -142,6 +142,30 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+ammo.o: ammo.cpp.o
+.PHONY : ammo.o
+
+# target to build an object file
+ammo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/ammo.cpp.o
+.PHONY : ammo.cpp.o
+
+ammo.i: ammo.cpp.i
+.PHONY : ammo.i
+
+# target to preprocess a source file
+ammo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/ammo.cpp.i
+.PHONY : ammo.cpp.i
+
+ammo.s: ammo.cpp.s
+.PHONY : ammo.s
+
+# target to generate assembly for a file
+ammo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/ammo.cpp.s
+.PHONY : ammo.cpp.s
+
 ascii-gfx/gfx/gfx.o: ascii-gfx/gfx/gfx.cpp.o
 .PHONY : ascii-gfx/gfx/gfx.o
 
@@ -560,6 +584,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... asciigfx"
 	@echo "... main"
+	@echo "... ammo.o"
+	@echo "... ammo.i"
+	@echo "... ammo.s"
 	@echo "... ascii-gfx/gfx/gfx.o"
 	@echo "... ascii-gfx/gfx/gfx.i"
 	@echo "... ascii-gfx/gfx/gfx.s"

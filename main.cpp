@@ -56,6 +56,6 @@ void show_start_screen()
 clear();
 mvprintw(LINES / 2 - 2, (COLS - 20) / 2, "1. Play");
 mvprintw(LINES / 2 - 1, (COLS - 20) / 2, "2. Highscores (not implemented)");
-mvprintw(LINES / 2 + 1, (COLS - 20) / 2, "Press 'q' to quit, 'SPACE' to play");
+mvprintw(LINES / 2 + 1, (COLS - 20) / 2, "Press 'q' to quit, '1' to play");
 refresh();
 }
