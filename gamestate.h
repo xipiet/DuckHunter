@@ -5,6 +5,7 @@ enum GAME_STATE
 {
     GAME_INTRO = 0,
     GAME_LOOP = 1
+    
 };
 
 void init_state();

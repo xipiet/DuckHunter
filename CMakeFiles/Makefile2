@@ -109,12 +109,12 @@ CMakeFiles/asciigfx.dir/clean:
 CMakeFiles/main.dir/all: CMakeFiles/asciigfx.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/peter/Documents/Uni/Prog/02 Semester/Prog pr/DuckHunter/CMakeFiles" --progress-num=13,14,15,16,17,18,19,20 "Built target main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/peter/Documents/Uni/Prog/02 Semester/Prog pr/DuckHunter/CMakeFiles" --progress-num=13,14,15,16,17,18,19,20,21 "Built target main"
 .PHONY : CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/peter/Documents/Uni/Prog/02 Semester/Prog pr/DuckHunter/CMakeFiles" 20
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/peter/Documents/Uni/Prog/02 Semester/Prog pr/DuckHunter/CMakeFiles" 21
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/peter/Documents/Uni/Prog/02 Semester/Prog pr/DuckHunter/CMakeFiles" 0
 .PHONY : CMakeFiles/main.dir/rule

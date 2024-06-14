@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/main.cpp.o.d"
   "CMakeFiles/main.dir/msleep.cpp.o"
   "CMakeFiles/main.dir/msleep.cpp.o.d"
+  "CMakeFiles/main.dir/score.cpp.o"
+  "CMakeFiles/main.dir/score.cpp.o.d"
   "CMakeFiles/main.dir/vogel.cpp.o"
   "CMakeFiles/main.dir/vogel.cpp.o.d"
   "CMakeFiles/main.dir/windmill.cpp.o"

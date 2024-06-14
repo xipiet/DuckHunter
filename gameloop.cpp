@@ -7,7 +7,7 @@
 #include "windmill.h"
 #include "gamestate.h"
 
-int px = 0;
+int px;
 int py;
 int target_x;
 int target_y;
@@ -49,6 +49,7 @@ void game_loop()
     generate_random_start_position();
     generate_random_coordinates();
     reload_ammo();
+    reset_score();
 
     curs_set(0);
     timeout(0);
@@ -56,7 +57,8 @@ void game_loop()
     while (get_state() == GAME_LOOP)
     {
         int ch = getch();
-        if (update_state(ch)) {
+        if (update_state(ch))
+        {
             break;
         }
 
@@ -74,13 +76,23 @@ void game_loop()
                 use_ammo();
                 if (get_ammo() == 0)
                 {
+                    FILE *fptr;
+                    fptr = fopen("scores.txt", "a");
+
+                    int score = get_score();
+                    fprintf(fptr, "\nScore: %d", score);
+
+                    fclose(fptr);
+
                     set_state(GAME_INTRO);
                     break;
                 }
                 if (event.x >= px && event.x <= px + 8 && event.y >= py && event.y <= py + 2)
                 {
                     sound_play("hit.wav");
-                    add_ammo(1);
+                    add_ammo(2);
+                    increase_score();
+
                     get_ammo();
                     generate_random_start_position();
                     generate_random_coordinates();
@@ -118,6 +130,7 @@ void game_loop()
 
         print_bird(py, px, 1);
         render_ammo();
+        render_score();
 
         refresh();
         msleep(100); // 100ms = 10 fps

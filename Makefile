@@ -526,6 +526,30 @@ msleep.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/msleep.cpp.s
 .PHONY : msleep.cpp.s
 
+score.o: score.cpp.o
+.PHONY : score.o
+
+# target to build an object file
+score.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/score.cpp.o
+.PHONY : score.cpp.o
+
+score.i: score.cpp.i
+.PHONY : score.i
+
+# target to preprocess a source file
+score.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/score.cpp.i
+.PHONY : score.cpp.i
+
+score.s: score.cpp.s
+.PHONY : score.s
+
+# target to generate assembly for a file
+score.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/score.cpp.s
+.PHONY : score.cpp.s
+
 vogel.o: vogel.cpp.o
 .PHONY : vogel.o
 
@@ -632,6 +656,9 @@ help:
 	@echo "... msleep.o"
 	@echo "... msleep.i"
 	@echo "... msleep.s"
+	@echo "... score.o"
+	@echo "... score.i"
+	@echo "... score.s"
 	@echo "... vogel.o"
 	@echo "... vogel.i"
 	@echo "... vogel.s"

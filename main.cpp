@@ -40,7 +40,7 @@ while (running)
         int ch = getch();
         if (update_state(ch))
         {
-            running = false;  // Exit the main loop
+            running = false;  // verlässt den loop
         }
     }
 }
@@ -57,5 +57,6 @@ clear();
 mvprintw(LINES / 2 - 2, (COLS - 20) / 2, "1. Play");
 mvprintw(LINES / 2 - 1, (COLS - 20) / 2, "2. Highscores (not implemented)");
 mvprintw(LINES / 2 + 1, (COLS - 20) / 2, "Press 'q' to quit, '1' to play");
+msleep(100);
 refresh();
 }

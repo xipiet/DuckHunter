@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/peter/Documents/Uni/Prog/02 Semester/Prog pr/DuckHunter/gamestate.cpp" "CMakeFiles/main.dir/gamestate.cpp.o" "gcc" "CMakeFiles/main.dir/gamestate.cpp.o.d"
   "/home/peter/Documents/Uni/Prog/02 Semester/Prog pr/DuckHunter/main.cpp" "CMakeFiles/main.dir/main.cpp.o" "gcc" "CMakeFiles/main.dir/main.cpp.o.d"
   "/home/peter/Documents/Uni/Prog/02 Semester/Prog pr/DuckHunter/msleep.cpp" "CMakeFiles/main.dir/msleep.cpp.o" "gcc" "CMakeFiles/main.dir/msleep.cpp.o.d"
+  "/home/peter/Documents/Uni/Prog/02 Semester/Prog pr/DuckHunter/score.cpp" "CMakeFiles/main.dir/score.cpp.o" "gcc" "CMakeFiles/main.dir/score.cpp.o.d"
   "/home/peter/Documents/Uni/Prog/02 Semester/Prog pr/DuckHunter/vogel.cpp" "CMakeFiles/main.dir/vogel.cpp.o" "gcc" "CMakeFiles/main.dir/vogel.cpp.o.d"
   "/home/peter/Documents/Uni/Prog/02 Semester/Prog pr/DuckHunter/windmill.cpp" "CMakeFiles/main.dir/windmill.cpp.o" "gcc" "CMakeFiles/main.dir/windmill.cpp.o.d"
   )

@@ -17,4 +17,10 @@ void reload_ammo();
 int get_ammo();
 void add_ammo(int amount);
 
+//score
+void increase_score();
+int get_score();
+void render_score();
+void reset_score();
+
 #endif
