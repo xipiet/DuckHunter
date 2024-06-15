@@ -54,6 +54,9 @@ void game_loop()
     curs_set(0);
     timeout(0);
 
+    float speed = 1.0;  // Initial speed
+    int frame_counter = 0;  // To keep track of frames for increasing speed
+
     while (get_state() == GAME_LOOP)
     {
         int ch = getch();
@@ -104,20 +107,20 @@ void game_loop()
 
         if (px < target_x)
         {
-            px++;
+            px += speed;
         }
         else if (px > target_x)
         {
-            px--;
+            px -= speed;
         }
 
         if (py < target_y)
         {
-            py++;
+            py += speed;
         }
         else if (py > target_y)
         {
-            py--;
+            py -= speed;
         }
 
         if (px == target_x && py == target_y)
@@ -133,6 +136,13 @@ void game_loop()
         render_score();
 
         refresh();
-        msleep(100); // 100ms = 10 fps
+
+        frame_counter++;
+        if (frame_counter % 100 == 0)  // Increase speed every 100 frames
+        {
+            speed += 0.1;  // Adjust the increment as needed
+        }
+
+        msleep(100 / speed);  // Adjust sleep duration to control game speed
     }
 }
