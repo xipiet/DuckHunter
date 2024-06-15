@@ -1,7 +1,7 @@
 CMakeFiles/main.dir/windmill.cpp.o: \
  /home/peter/Documents/Uni/Prog/02\ Semester/Prog\ pr/DuckHunter/windmill.cpp \
  /usr/include/stdc-predef.h \
- /home/peter/Documents/Uni/Prog/02\ Semester/Prog\ pr/DuckHunter/windmill.h \
+ /home/peter/Documents/Uni/Prog/02\ Semester/Prog\ pr/DuckHunter/module.h \
  /usr/include/curses.h /usr/include/ncurses_dll.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \

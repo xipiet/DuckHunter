@@ -1,4 +1,4 @@
-#include "windmill.h"
+#include "module.h"
 #include <ncurses.h>
 
 #define PROPELLER_FRAMES 4

@@ -39,4 +39,5 @@ CMakeFiles/main.dir/score.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar2-decl.h \
  /usr/include/x86_64-linux-gnu/bits/wchar2.h /usr/include/unctrl.h \
  /usr/include/curses.h \
- /home/peter/Documents/Uni/Prog/02\ Semester/Prog\ pr/DuckHunter/module.h
+ /home/peter/Documents/Uni/Prog/02\ Semester/Prog\ pr/DuckHunter/module.h \
+ /home/peter/Documents/Uni/Prog/02\ Semester/Prog\ pr/DuckHunter/gamestate.h

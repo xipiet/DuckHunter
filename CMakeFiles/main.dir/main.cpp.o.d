@@ -85,7 +85,6 @@ CMakeFiles/main.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
  /home/peter/Documents/Uni/Prog/02\ Semester/Prog\ pr/DuckHunter/module.h \
- /home/peter/Documents/Uni/Prog/02\ Semester/Prog\ pr/DuckHunter/windmill.h \
  /home/peter/Documents/Uni/Prog/02\ Semester/Prog\ pr/DuckHunter/ascii-gfx/gfx/sound.h \
  /home/peter/Documents/Uni/Prog/02\ Semester/Prog\ pr/DuckHunter/ascii-gfx/gfx/gfx.h \
  /usr/include/c++/13/math.h /usr/include/c++/13/cmath \

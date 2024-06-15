@@ -6,7 +6,7 @@ PROJECT(ASCII_GFX_library)
 # specify sources and headers
 SET(HDRS
    # module headers go here (*.h)
-   module.h windmill.h gamestate.h
+   module.h gamestate.h
    )
 SET(SRCS
    # module implementations go here (*.cpp)

@@ -86,5 +86,4 @@ CMakeFiles/main.dir/gameloop.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
  /home/peter/Documents/Uni/Prog/02\ Semester/Prog\ pr/DuckHunter/module.h \
  /home/peter/Documents/Uni/Prog/02\ Semester/Prog\ pr/DuckHunter/ascii-gfx/gfx/sound.h \
- /home/peter/Documents/Uni/Prog/02\ Semester/Prog\ pr/DuckHunter/windmill.h \
  /home/peter/Documents/Uni/Prog/02\ Semester/Prog\ pr/DuckHunter/gamestate.h
