@@ -1,4 +1,0 @@
-/home/peter/Documents/Uni/Prog/02 Semester/Prog pr/DuckHunter/CMakeFiles/asciigfx.dir
-/home/peter/Documents/Uni/Prog/02 Semester/Prog pr/DuckHunter/CMakeFiles/main.dir
-/home/peter/Documents/Uni/Prog/02 Semester/Prog pr/DuckHunter/CMakeFiles/edit_cache.dir
-/home/peter/Documents/Uni/Prog/02 Semester/Prog pr/DuckHunter/CMakeFiles/rebuild_cache.dir
