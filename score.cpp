@@ -2,7 +2,7 @@
 #include "module.h"
 #include "gamestate.h"
 
-int score = 0; // Punktestand-Variable
+int score = 0;
 
 void increase_score()
 {

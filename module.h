@@ -1,14 +1,12 @@
-#ifndef MODULE_H
-#define MODULE_H
-
-#include <ncurses.h>
-
 extern int px;
 extern int py;
 extern int target_x;
 extern int target_y;
 extern float speed;
 extern float beschleunigung;
+
+extern int MAX_AMMO;
+extern int ammo;
 
 //funktionen
 void game_loop();
@@ -43,4 +41,3 @@ void render_windmill();
 void generate_random_start_position();
 void generate_random_coordinates();
 void vogel_speed();
-#endif

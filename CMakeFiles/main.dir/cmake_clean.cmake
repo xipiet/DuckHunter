@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/main.dir/ammo.cpp.o"
   "CMakeFiles/main.dir/ammo.cpp.o.d"
+  "CMakeFiles/main.dir/bird.cpp.o"
+  "CMakeFiles/main.dir/bird.cpp.o.d"
   "CMakeFiles/main.dir/gameloop.cpp.o"
   "CMakeFiles/main.dir/gameloop.cpp.o.d"
   "CMakeFiles/main.dir/gamestate.cpp.o"
@@ -11,8 +13,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/msleep.cpp.o.d"
   "CMakeFiles/main.dir/score.cpp.o"
   "CMakeFiles/main.dir/score.cpp.o.d"
-  "CMakeFiles/main.dir/vogel.cpp.o"
-  "CMakeFiles/main.dir/vogel.cpp.o.d"
   "CMakeFiles/main.dir/windmill.cpp.o"
   "CMakeFiles/main.dir/windmill.cpp.o.d"
   "main"

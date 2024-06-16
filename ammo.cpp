@@ -1,9 +1,9 @@
 #include <ncurses.h>
 #include "module.h"
 
-#define MAX_AMMO 5
 
-int ammo = MAX_AMMO; // Definition of the ammo variable
+int MAX_AMMO = 5;
+int ammo = MAX_AMMO;
 
 void render_ammo()
 {

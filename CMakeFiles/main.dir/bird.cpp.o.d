@@ -1,5 +1,5 @@
-CMakeFiles/main.dir/vogel.cpp.o: \
- /home/peter/Documents/Uni/Prog/02\ Semester/Prog\ pr/DuckHunter/vogel.cpp \
+CMakeFiles/main.dir/bird.cpp.o: \
+ /home/peter/Documents/Uni/Prog/02\ Semester/Prog\ pr/DuckHunter/bird.cpp \
  /usr/include/stdc-predef.h /usr/include/curses.h \
  /usr/include/ncurses_dll.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \

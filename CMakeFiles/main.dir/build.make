@@ -97,19 +97,19 @@ CMakeFiles/main.dir/gameloop.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/gameloop.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/peter/Documents/Uni/Prog/02 Semester/Prog pr/DuckHunter/gameloop.cpp" -o CMakeFiles/main.dir/gameloop.cpp.s
 
-CMakeFiles/main.dir/vogel.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/vogel.cpp.o: vogel.cpp
-CMakeFiles/main.dir/vogel.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/peter/Documents/Uni/Prog/02 Semester/Prog pr/DuckHunter/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/vogel.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/vogel.cpp.o -MF CMakeFiles/main.dir/vogel.cpp.o.d -o CMakeFiles/main.dir/vogel.cpp.o -c "/home/peter/Documents/Uni/Prog/02 Semester/Prog pr/DuckHunter/vogel.cpp"
+CMakeFiles/main.dir/bird.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/bird.cpp.o: bird.cpp
+CMakeFiles/main.dir/bird.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/peter/Documents/Uni/Prog/02 Semester/Prog pr/DuckHunter/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/bird.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/bird.cpp.o -MF CMakeFiles/main.dir/bird.cpp.o.d -o CMakeFiles/main.dir/bird.cpp.o -c "/home/peter/Documents/Uni/Prog/02 Semester/Prog pr/DuckHunter/bird.cpp"
 
-CMakeFiles/main.dir/vogel.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/vogel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/peter/Documents/Uni/Prog/02 Semester/Prog pr/DuckHunter/vogel.cpp" > CMakeFiles/main.dir/vogel.cpp.i
+CMakeFiles/main.dir/bird.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/bird.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/peter/Documents/Uni/Prog/02 Semester/Prog pr/DuckHunter/bird.cpp" > CMakeFiles/main.dir/bird.cpp.i
 
-CMakeFiles/main.dir/vogel.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/vogel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/peter/Documents/Uni/Prog/02 Semester/Prog pr/DuckHunter/vogel.cpp" -o CMakeFiles/main.dir/vogel.cpp.s
+CMakeFiles/main.dir/bird.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/bird.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/peter/Documents/Uni/Prog/02 Semester/Prog pr/DuckHunter/bird.cpp" -o CMakeFiles/main.dir/bird.cpp.s
 
 CMakeFiles/main.dir/msleep.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/msleep.cpp.o: msleep.cpp
@@ -185,7 +185,7 @@ CMakeFiles/main.dir/score.cpp.s: cmake_force
 main_OBJECTS = \
 "CMakeFiles/main.dir/main.cpp.o" \
 "CMakeFiles/main.dir/gameloop.cpp.o" \
-"CMakeFiles/main.dir/vogel.cpp.o" \
+"CMakeFiles/main.dir/bird.cpp.o" \
 "CMakeFiles/main.dir/msleep.cpp.o" \
 "CMakeFiles/main.dir/windmill.cpp.o" \
 "CMakeFiles/main.dir/gamestate.cpp.o" \
@@ -197,7 +197,7 @@ main_EXTERNAL_OBJECTS =
 
 main: CMakeFiles/main.dir/main.cpp.o
 main: CMakeFiles/main.dir/gameloop.cpp.o
-main: CMakeFiles/main.dir/vogel.cpp.o
+main: CMakeFiles/main.dir/bird.cpp.o
 main: CMakeFiles/main.dir/msleep.cpp.o
 main: CMakeFiles/main.dir/windmill.cpp.o
 main: CMakeFiles/main.dir/gamestate.cpp.o

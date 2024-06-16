@@ -14,7 +14,6 @@ int main()
     keypad(stdscr, TRUE);
     mousemask(ALL_MOUSE_EVENTS, NULL);
     srand(time(NULL));
-    init_windmill();
     init_state();
 
     bool running = true;
@@ -33,9 +32,8 @@ int main()
 
         int ch = getch();
         update_state(ch);
-
         if (ch == 'q') {
-            running = false;  // exit loop
+            running = false;
         }
     }
 

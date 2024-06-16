@@ -16,16 +16,13 @@ void game_loop()
     generate_random_coordinates();
     reload_ammo();
     reset_score();
-    curs_set(0);
-    timeout(0);
+    init_windmill();
 
     bird_reached_target = false;
     int frame_counter = 0;
 
-
     while (get_state() == GAME_LOOP)
     {
-        
 
         int ch = getch();
         if (update_state(ch))
@@ -53,10 +50,17 @@ void game_loop()
                 }
                 if (event.x >= px && event.x <= px + 8 && event.y >= py && event.y <= py + 2)
                 {
+
                     sound_play("hit.wav");
-                    add_ammo(2);
+                    add_ammo(1);
                     increase_score();
 
+                    if (get_ammo() == MAX_AMMO)
+                    {
+                        increase_score();
+                    }
+                    
+                    add_ammo(1);
                     get_ammo();
                     generate_random_start_position();
                     generate_random_coordinates();
@@ -75,11 +79,11 @@ void game_loop()
         refresh();
 
         frame_counter++;
-        if (frame_counter % 100 == 0) // Increase speed every 100 frames
+        if (frame_counter % 100 == 0)
         {
-            speed += beschleunigung; // Adjust the increment as needed
+            speed += beschleunigung;
         }
 
-        msleep(100 / speed); // Adjust sleep duration to control game speed
+        msleep(100 / speed);
     }
 }

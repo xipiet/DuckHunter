@@ -430,6 +430,30 @@ ascii-gfx/gfx/util.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/asciigfx.dir/build.make CMakeFiles/asciigfx.dir/ascii-gfx/gfx/util.cpp.s
 .PHONY : ascii-gfx/gfx/util.cpp.s
 
+bird.o: bird.cpp.o
+.PHONY : bird.o
+
+# target to build an object file
+bird.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/bird.cpp.o
+.PHONY : bird.cpp.o
+
+bird.i: bird.cpp.i
+.PHONY : bird.i
+
+# target to preprocess a source file
+bird.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/bird.cpp.i
+.PHONY : bird.cpp.i
+
+bird.s: bird.cpp.s
+.PHONY : bird.s
+
+# target to generate assembly for a file
+bird.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/bird.cpp.s
+.PHONY : bird.cpp.s
+
 gameloop.o: gameloop.cpp.o
 .PHONY : gameloop.o
 
@@ -550,30 +574,6 @@ score.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/score.cpp.s
 .PHONY : score.cpp.s
 
-vogel.o: vogel.cpp.o
-.PHONY : vogel.o
-
-# target to build an object file
-vogel.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/vogel.cpp.o
-.PHONY : vogel.cpp.o
-
-vogel.i: vogel.cpp.i
-.PHONY : vogel.i
-
-# target to preprocess a source file
-vogel.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/vogel.cpp.i
-.PHONY : vogel.cpp.i
-
-vogel.s: vogel.cpp.s
-.PHONY : vogel.s
-
-# target to generate assembly for a file
-vogel.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/vogel.cpp.s
-.PHONY : vogel.cpp.s
-
 windmill.o: windmill.cpp.o
 .PHONY : windmill.o
 
@@ -644,6 +644,9 @@ help:
 	@echo "... ascii-gfx/gfx/util.o"
 	@echo "... ascii-gfx/gfx/util.i"
 	@echo "... ascii-gfx/gfx/util.s"
+	@echo "... bird.o"
+	@echo "... bird.i"
+	@echo "... bird.s"
 	@echo "... gameloop.o"
 	@echo "... gameloop.i"
 	@echo "... gameloop.s"
@@ -659,9 +662,6 @@ help:
 	@echo "... score.o"
 	@echo "... score.i"
 	@echo "... score.s"
-	@echo "... vogel.o"
-	@echo "... vogel.i"
-	@echo "... vogel.s"
 	@echo "... windmill.o"
 	@echo "... windmill.i"
 	@echo "... windmill.s"

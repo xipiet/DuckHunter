@@ -10,7 +10,7 @@ SET(HDRS
    )
 SET(SRCS
    # module implementations go here (*.cpp)
-   main.cpp gameloop.cpp vogel.cpp msleep.cpp windmill.cpp gamestate.cpp ammo.cpp score.cpp
+   main.cpp gameloop.cpp bird.cpp msleep.cpp windmill.cpp gamestate.cpp ammo.cpp score.cpp
    )
 
 # specify source directories
