@@ -7,7 +7,7 @@
 #include "gamestate.h"
 
 bool bird_reached_target = false;
-float beschleunigung = 0.1; // beschleunigung pro 100 frames hier ändern
+float beschleunigung = 0.1; // default .1
 
 void game_loop()
 {
@@ -17,9 +17,10 @@ void game_loop()
     reload_ammo();
     reset_score();
     init_windmill();
-
-    bird_reached_target = false;
     int frame_counter = 0;
+    float speed = 1;
+    bird_reached_target = false;
+    
 
     while (get_state() == GAME_LOOP)
     {

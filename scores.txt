@@ -21,3 +21,5 @@ Score: 1
 Score: 0
 Score: 0
 Score: 85
+Score: 66
+Score: 92
